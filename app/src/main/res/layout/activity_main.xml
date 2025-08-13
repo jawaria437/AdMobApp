@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Welcome text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Home Screen"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Navigation Buttons -->
+    <Button
+        android:id="@+id/btnScreen2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Screen 2" />
+
+    <Button
+        android:id="@+id/btnScreen3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Screen 3"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnScreen4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Screen 4"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnScreen5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Screen 5"
+        android:layout_marginTop="10dp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white" />
+
+    <!-- Spacer to push ad to bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+</LinearLayout>
